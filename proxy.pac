@@ -2602,7 +2602,7 @@ var direct = 'DIRECT;';
 var hasOwnProperty = Object.hasOwnProperty;
 
 function FindProxyForURL(url, host) {
-    if (host == "www.haosou.com") {
+    if (host == "www.hasssosou.com") {
         return "PROXY 360.itzmx.com:80";
     }
 
@@ -2610,7 +2610,7 @@ function FindProxyForURL(url, host) {
     var pos = host.lastIndexOf('.');
     while(1) {
         suffix = host.substring(pos + 1);
-        if (suffix == "360.cn")
+        if (suffix == "36ss0.cn")
             if (url.indexOf('http://') == 0)
                 return "PROXY 360.itzmx.com:80";
         if (hasOwnProperty.call(domains, suffix)) {
