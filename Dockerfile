@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:wheezy
 MAINTAINER juzeon <master@skyju.cc>
 
 RUN apt-get update && \
