@@ -16,10 +16,10 @@ COPY entrypoint.sh /usr/local/bin/
 
 RUN rm -rf /etc/squid/squid.conf
 COPY squid.conf /etc/squid/
-RUN mkdir -p /var/cache/squid \
-	chmod -R 777 /var/cache/squid \
-	/etc/init.d/squid stop \
-	squid -z \
+RUN mkdir -p /var/cache/squid && \
+	chmod -R 777 /var/cache/squid && \
+	/etc/init.d/squid stop && \
+	squid -z && \
 	/etc/init.d/squid start
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
